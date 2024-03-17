@@ -36,3 +36,29 @@
         }
     }
 }
+
+body.dark-mode,
+body.dark-mode main * {
+
+    .skills {
+        &__group {
+            
+            & span {
+
+                &:hover ~ li {
+                    background-color: $color-primary-DarkTheme;
+                    color: $color-light-DarkTheme;
+                }
+            }
+    
+            & li{
+    
+                &:hover {
+                    background-color: $color-primary-DarkTheme;
+                    color: $color-light-DarkTheme;
+                }
+            }
+        }
+    }
+
+}

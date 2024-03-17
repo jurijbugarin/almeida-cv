@@ -6,14 +6,7 @@
     box-sizing: inherit;
 }
 
-html {
-    font-size: 62.5%;
-    background-color: $color-page-background;
 
-    @media print {
-        background-color: $color-light;
-    }
-}
 
 .content {
     // A4 paper
@@ -26,6 +19,7 @@ html {
         @include shadow(1);
         @include hz-center;
     }
+
     @media print {
         margin: 0;
         height: paper_height($page-width) * $pages;
@@ -35,16 +29,36 @@ html {
 body {
     box-sizing: border-box;
     margin: 0px;
-}
 
-@media print {
-    @page {
-        margin: 0;
-        size: A4;
+    font-size: 62.5%;
+    background-color: $color-page-background;
+
+    @media print {
+        background-color: $color-light;
     }
 }
 
 ::selection {
     color: $color-light;
     background-color: darken(rgba($color-primary, 0.6), 10%);
+}
+
+body.dark-mode,
+body.dark-mode main * {
+
+    .content {
+        background-color: $color-light-DarkTheme;
+    }
+
+    background-color: $color-page-background-DarkTheme;
+
+    @media print {
+        background-color: $color-light-DarkTheme;
+    }
+
+    ::selection {
+        color: $color-light-DarkTheme;
+        background-color: darken(rgba($color-primary-DarkTheme, 0.6), 10%);
+    }
+
 }

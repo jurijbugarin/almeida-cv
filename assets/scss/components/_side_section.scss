@@ -38,3 +38,24 @@
         list-style: none;
     }
 }
+
+body.dark-mode,
+body.dark-mode main * {
+    .sideSection {
+        
+    
+        &__heading {
+            color: $color-right-col-heading-text-DarkTheme;
+        }
+    
+        &__title {
+    
+            &::after,
+            &::before {
+                border-top: 1px solid $color-right-col-heading-text-DarkTheme;
+                border-bottom: 1px solid $color-right-col-heading-text-DarkTheme;
+            }
+        }
+    }
+
+}

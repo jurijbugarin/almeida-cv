@@ -26,3 +26,20 @@ h2 {
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
 }
+
+body.dark-mode, 
+body.dark-mode main * {
+    color: $color-dark-DarkTheme;
+
+    .mainHeading {
+        color: $color-secondary-DarkTheme;
+    
+        & span {
+            color: $color-primary-DarkTheme;
+        }
+    }
+
+    .section__title {
+        color: $color-dark-DarkTheme;
+    }
+}

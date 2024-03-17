@@ -28,3 +28,19 @@
         }
     }
 }
+
+body.dark-mode,
+body.dark-mode main * {
+    .section {
+        &__title {
+            &::after {
+                border-color: $color-secondary-DarkTheme;
+            }
+    
+            &:hover::after {
+                border-color: $color-primary-DarkTheme;
+            }
+        }
+    }
+
+}

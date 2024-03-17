@@ -61,3 +61,21 @@
         list-style: none;
     }
 }
+
+body.dark-mode,
+body.dark-mode main * {
+    .references {
+        &__name,
+        &__relation {
+            color: $color-dark-DarkTheme;
+        }
+    
+        &__contact {
+            & > i {
+                background-color: $color-icon-background-DarkTheme;
+                color: $color-icon-primary-DarkTheme;
+            }
+        }
+    
+    }
+}

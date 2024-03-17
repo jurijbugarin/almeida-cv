@@ -106,3 +106,44 @@
         padding: 0.1rem 0.6rem;
     }
 }
+
+body.dark-mode,
+body.dark-mode main * {
+
+    .experience {
+    
+        &__item {
+            &::before {
+                background: linear-gradient($color-page-background-DarkTheme, rgba(255, 255, 255, 0));
+            }
+        }
+    
+        &__company {
+            color: $color-dark-DarkTheme;
+        }
+    
+        &__position {
+            color: $color-dark-DarkTheme;
+        }
+    
+        &__date,
+        &__place {
+            color: $color-secondary-DarkTheme;
+        }
+    
+        &__date {
+            font-weight: 400;
+        }
+    
+        &__place {
+            &::before {
+                color: $color-icon-background-DarkTheme;
+            }
+        }
+   
+        &__badge {
+            background-color: $color-icon-background-DarkTheme;
+            color: $color-icon-primary-DarkTheme;
+        }
+    }
+}

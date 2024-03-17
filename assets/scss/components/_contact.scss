@@ -27,3 +27,22 @@
         color: $color-dark;
     }
 }
+
+body.dark-mode,
+body.dark-mode main * {
+
+    .contact {
+    
+        &__item {
+            & > i {
+                background-color: $color-right-col-icon-background-DarkTheme;
+                color: $color-right-col-icon-primary-DarkTheme;
+            }
+        }
+    
+        &__link {
+            color: $color-dark-DarkTheme;
+        }
+    }
+
+}

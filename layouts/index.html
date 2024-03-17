@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
     {{ partial "head.html" . }}
+   
 <body>
     <div class="content">
         {{ if .Site.Params.swapColumns }}
@@ -22,12 +23,15 @@
         <div class="content__right">
         {{ end }}
             {{ partial "_avatar.html" $data }}
+            {{ partial "toggle.html" . }}
             {{ partial "_contacts.html" $data }}
             {{ partial "_skills.html" $data }}
             {{ partial "_languages.html" $data }}
             {{ partial "_diplomas.html" $data }}
             {{ partial "_interests.html" $data }}
+           
         </div>
     </div>
 </body>
+
 </html>

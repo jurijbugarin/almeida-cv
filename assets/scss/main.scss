@@ -1,6 +1,6 @@
-$color-light: {{ .Site.Params.colorLight | default "#fff"}} !default;
-$color-dark: {{ .Site.Params.colorDark | default "#666"}} !default;
-$color-page-background: {{ .Site.Params.colorPageBackground | default "#ddd" }} !default;
+$color-light: {{ .Site.Params.colorLight | default "#777"}} !default;
+$color-dark: {{ .Site.Params.colorDark | default "#555"}} !default;
+$color-page-background: {{ .Site.Params.colorPageBackground | default "#000" }} !default;
 
 $color-primary: {{ .Site.Params.colorPrimary | default "#e3bfb8"}} !default;
 
@@ -14,6 +14,24 @@ $color-right-col-heading-text: {{ .Site.Params.colorRightColumnHeadingText | def
 $color-right-col-body-text: {{ .Site.Params.colorRightColumnBodyText | default "#666" }} !default;
 $color-right-col-icon-primary: {{ .Site.Params.colorRightColumnIconPrimary | default "#fff" }} !default;
 $color-right-col-icon-background: {{ .Site.Params.colorRightColumnIconBackground | default "#e3bfb8" }} !default;
+
+$color-light-DarkTheme: {{ .Site.Params.colorLightDarkTheme | default "#777"}} !default;
+$color-dark-DarkTheme: {{ .Site.Params.colorDarkDarkTheme | default "#555"}} !default;
+$color-page-background-DarkTheme: {{ .Site.Params.colorPageBackgroundDarkTheme | default "#000" }} !default;
+
+$color-primary-DarkTheme: {{ .Site.Params.colorPrimaryDarkTheme | default "#e3bfb8"}} !default;
+
+$color-secondary-DarkTheme: {{ .Site.Params.colorSecondaryDarkTheme | default "#aaa"}} !default;
+
+$color-icon-primary-DarkTheme: {{ .Site.Params.colorIconPrimaryDarkTheme | default "#fff"}} !default;
+$color-icon-background-DarkTheme: {{ .Site.Params.colorIconBackgroundDarkTheme | default "#e3bfb8"}} !default;
+
+$color-right-col-background-DarkTheme: {{ .Site.Params.colorRightColumnBackgroundDarkTheme | default "#f5f5f5" }} !default;
+$color-right-col-heading-text-DarkTheme: {{ .Site.Params.colorRightColumnHeadingTextDarkTheme | default "#666" }} !default;
+$color-right-col-body-text-DarkTheme: {{ .Site.Params.colorRightColumnBodyTextDarkTheme | default "#666" }} !default;
+$color-right-col-icon-primary-DarkTheme: {{ .Site.Params.colorRightColumnIconPrimaryDarkTheme | default "#fff" }} !default;
+$color-right-col-icon-background-DarkTheme: {{ .Site.Params.colorRightColumnIconBackgroundDarkTheme | default "#e3bfb8" }} !default;
+
 
 $pages: {{ .Site.Params.pages | default 1}} !default;
 
