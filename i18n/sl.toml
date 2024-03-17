@@ -1,0 +1,23 @@
+[profile]
+other = "O meni"
+
+[experience]
+other = "Izkušnje"
+
+[education]
+other = "Izobrazba"
+
+[references]
+other = "Reference"
+
+[skills]
+other = "Znanja"
+
+[languages]
+other = "Jeziki"
+
+[diplomas]
+other = "Certifikati"
+
+[interests]
+other = "Iteresi"
