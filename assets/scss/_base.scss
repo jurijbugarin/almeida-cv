@@ -38,6 +38,35 @@ body {
     }
 }
 
+footer {
+  color: #bdbbbb;
+  height: 1rem;
+  position: fixed;
+  bottom: 0.5rem;
+  width: 100%;
+  font-size: 10px;
+
+  a {
+    text-decoration: none;
+    color: #bdbbbb;
+     link {
+      text-decoration: none;
+    }
+
+    visited {
+      text-decoration: none;
+    }
+
+    hover {
+      text-decoration: none;
+    }
+
+    active {
+      text-decoration: none;
+    }
+  }
+}
+
 ::selection {
     color: $color-light;
     background-color: darken(rgba($color-primary, 0.6), 10%);

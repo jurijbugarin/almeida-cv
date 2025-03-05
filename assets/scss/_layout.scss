@@ -10,12 +10,14 @@
 
         @media screen {
             &::after {
-                content: '2023 © by Jurij Bugarin   |   https://bugi.dev';
-                height: 4rem;
-                width: 100%;
-                position: absolute;
-                bottom: 0.5rem;
-                color: darken($color-light, 30%);
+              //content: '2025 © by Jurij Bugarin   |   https://bugi.dev' ;
+              height: 2rem;
+              width: 100%;
+              position: absolute;
+              bottom: 0.5rem;
+              //color: darken($color-light, 30%);
+              color:#6b6b6b;
+              font-size: 12px;
             }
         }
     }
@@ -48,20 +50,21 @@
 body.dark-mode, 
 body.dark-mode main * {
 
-    .content {
-    
-        &__left {
-       
-            @media screen {
-                &::after {
-                    color: darken($color-light-DarkTheme, 30%);
-                }
-            }
+  .content {
+
+    &__left {
+
+      @media screen {
+        &::after {
+          //color: darken($color-light-DarkTheme, 30%);
+          color: #6b6b6b;;
         }
-    
-        &__right {
-            background-color: $color-right-col-background-DarkTheme;
-            color: $color-right-col-body-text-DarkTheme;
-        }
+      }
     }
+
+    &__right {
+      background-color: $color-right-col-background-DarkTheme;
+      color: $color-right-col-body-text-DarkTheme;
+    }
+  }
 }

@@ -1,0 +1,12 @@
+{{ with .Params.hide_footer }}
+<!-- No footer here! -->
+{{ else }}
+<footer>
+    <div>
+        <p>
+            &copy; {{ now.Year }} by {{ .BasicInfo.FirstName }} {{ .BasicInfo.LastName }}
+            | <a class="fa fa-home" target="_blank" href="{{ .BasicInfo.Homepage }}"> {{ .BasicInfo.HomepageName }}</a>
+        </p>
+    </div>
+</footer>
+{{ end }}
